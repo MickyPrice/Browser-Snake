@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+
+
+    <style media="screen">
+      #game {
+        border: 1px solid #1a1a1a;
+        margin:0;
+        display: table;
+      }
+      .cell {
+        margin: 0;
+        /*border: 1px solid #000;*/
+        width: 10px;
+        height: 10px;
+      }
+      .row {
+        display: flex;
+      }
+      .cell[isFruit="true"] {
+        background-color: red;
+      }
+      .cell[isHead="true"] {
+        background-color: green;
+      }
+      .cell[isBody="true"] {
+        background-color: lawnGreen;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div>
+      <h3>How to play</h3>
+      <p>Eat the fruit and the snake will grow. Don't hit the side, don't hit your tail.</p>
+      <p><kbd>Arrow Keys</kbd> to move around</p>
+      <p><kbd>Space bar</kbd> to toggle pause</p>
+    </div>
+    <h1 id="gameTitle">Browser Snake</h1>
+    <div id="game">
+
+    </div>
+
+    <script src="./snake.js" charset="utf-8"></script>
+  </body>
+</html>
